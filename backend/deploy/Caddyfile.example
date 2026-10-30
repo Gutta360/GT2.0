@@ -1,0 +1,18 @@
+# Not selected for the audited RWP deployment. That server already runs Nginx,
+# and initial private tablet testing uses Tailscale Serve without changing
+# Nginx or opening a public port. Retain this only as a future public-HTTPS
+# alternative after a separately approved reverse-proxy review.
+backup.example.com {
+    encode zstd gzip
+    reverse_proxy 127.0.0.1:8091
+
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "no-referrer"
+    }
+
+    log {
+        output file /var/log/caddy/gt2-access.log
+    }
+}

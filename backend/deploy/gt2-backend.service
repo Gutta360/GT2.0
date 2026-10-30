@@ -1,0 +1,39 @@
+[Unit]
+Description=GT2.0 backup and recovery backend
+After=network-online.target docker.service
+Wants=network-online.target
+RequiresMountsFor=/home/gutta/gapps/gt2 /etc/gt2 /opt/gt2 /var/lib/gt2
+
+[Service]
+Type=simple
+User=gt2
+Group=gt2
+WorkingDirectory=/var/lib/gt2
+EnvironmentFile=/etc/gt2/backend.env
+ExecStartPre=/usr/bin/test -r /opt/gt2/current/gt2-backend.jar
+ExecStartPre=/usr/bin/test -d /var/lib/gt2/snapshots
+ExecStart=/usr/bin/java -XX:MaxRAMPercentage=75 -jar /opt/gt2/current/gt2-backend.jar
+Restart=on-failure
+RestartSec=5
+SuccessExitStatus=143
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+BindReadOnlyPaths=/home/gutta/gapps/gt2/current:/opt/gt2/current
+BindPaths=/home/gutta/gapps/gt2/shared/snapshots:/var/lib/gt2/snapshots
+ReadWritePaths=/var/lib/gt2/snapshots
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictNamespaces=true
+LockPersonality=true
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

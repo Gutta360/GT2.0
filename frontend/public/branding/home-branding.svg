@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="Abstract dental care illustration">
+  <rect width="640" height="520" rx="48" fill="#f2f4f7"/>
+  <circle cx="320" cy="260" r="176" fill="#fff" stroke="#d0d5dd" stroke-width="3"/>
+  <path d="M237 144c-42 15-66 60-54 109 12 50 40 60 46 118 4 42 18 63 38 39 20-24 20-87 53-87s33 63 53 87c20 24 34 3 38-39 6-58 34-68 46-118 12-49-12-94-54-109-34-12-56 7-83 7s-49-19-83-7z" fill="#111827"/>
+  <path d="M248 178c-24 14-34 42-26 71" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" opacity=".82"/>
+  <circle cx="488" cy="116" r="22" fill="#5f6f78"/><path d="M488 103v26m-13-13h26" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="142" cy="394" r="16" fill="#111827" opacity=".15"/><circle cx="504" cy="402" r="11" fill="#111827" opacity=".12"/>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "name": "gt2",
+      "type": "com.gt.config.Gt2Properties",
+      "sourceType": "com.gt.config.Gt2Properties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "gt2.admin-token",
+      "type": "java.lang.String",
+      "sourceType": "com.gt.config.Gt2Properties"
+    },
+    {
+      "name": "gt2.allowed-origins",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.gt.config.Gt2Properties"
+    },
+    {
+      "name": "gt2.enrollment-ttl",
+      "type": "java.time.Duration",
+      "sourceType": "com.gt.config.Gt2Properties"
+    },
+    {
+      "name": "gt2.max-batch-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.gt.config.Gt2Properties",
+      "defaultValue": 0
+    },
+    {
+      "name": "gt2.max-snapshot-bytes",
+      "type": "java.lang.Long",
+      "sourceType": "com.gt.config.Gt2Properties",
+      "defaultValue": 0
+    },
+    {
+      "name": "gt2.snapshot-master-key",
+      "type": "java.lang.String",
+      "sourceType": "com.gt.config.Gt2Properties"
+    },
+    {
+      "name": "gt2.snapshot-retention-count",
+      "type": "java.lang.Integer",
+      "sourceType": "com.gt.config.Gt2Properties",
+      "defaultValue": 0
+    },
+    {
+      "name": "gt2.snapshot-storage",
+      "type": "java.nio.file.Path",
+      "sourceType": "com.gt.config.Gt2Properties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.gt.Gt2PostgresIntegrationTest" time="0.002" tests="3" errors="0" skipped="3" failures="0" flakes="0">
+  <properties/>
+  <testcase name="snapshotDownloadsAreTenantIsolatedAndChecksumVerified" classname="com.gt.Gt2PostgresIntegrationTest" time="0.0">
+    <skipped message="disabledWithoutDocker is true and Docker is not available"/>
+    <system-out><![CDATA[23:17:29.188 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 2.0.5
+23:17:29.267 [main] INFO org.testcontainers.dockerclient.DockerMachineClientProviderStrategy -- docker-machine executable was not found on PATH ([/opt/homebrew/bin, /opt/homebrew/sbin, /usr/local/bin, /System/Cryptexes/App/usr/bin, /usr/bin, /bin, /usr/sbin, /sbin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin, /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin, /pkg/env/global/bin, /Users/gutta/.codex/tmp/arg0-macos/codex-arg0EuZTkV, /opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin, /opt/homebrew/bin, /opt/homebrew/sbin, /Users/gutta/Documents/MySoftwares/flutter/bin, /Users/gutta/Library/Android/sdk/emulator, /Users/gutta/Library/Android/sdk/platform-tools, /Users/gutta/.vscode/extensions/openai.chatgpt-26.1021.22027-darwin-arm64/bin/macos-aarch64])
+23:17:29.267 [main] ERROR org.testcontainers.dockerclient.DockerClientProviderStrategy -- Could not find a valid Docker environment. Please check configuration. Attempted configurations were:
+	UnixSocketClientProviderStrategy: failed with exception InvalidConfigurationException (Could not find unix domain socket). Root cause NoSuchFileException (/var/run/docker.sock)
+	DockerDesktopClientProviderStrategy: failed with exception NullPointerException (Cannot invoke "java.nio.file.Path.toString()" because the return value of "org.testcontainers.dockerclient.DockerDesktopClientProviderStrategy.getSocketPath()" is null)As no valid configuration was found, execution cannot continue.
+See https://java.testcontainers.org/on_failure.html for more details.
+]]></system-out>
+  </testcase>
+  <testcase name="deviceRegistrationIsOneUseAndProtectedApisRequireAuthentication" classname="com.gt.Gt2PostgresIntegrationTest" time="0.0">
+    <skipped message="disabledWithoutDocker is true and Docker is not available"/>
+  </testcase>
+  <testcase name="acceptsOrderedPatientEventOnlyOnceAndRejectsMissingPredecessor" classname="com.gt.Gt2PostgresIntegrationTest" time="0.0">
+    <skipped message="disabledWithoutDocker is true and Docker is not available"/>
+  </testcase>
+</testsuite>
